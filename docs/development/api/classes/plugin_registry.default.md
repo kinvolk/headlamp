@@ -10,44 +10,46 @@ slug: "plugin_registry.default"
 
 ### constructor
 
-\+ **new default**(): [*default*](plugin_registry.default.md)
-
-**Returns:** [*default*](plugin_registry.default.md)
+• **new default**()
 
 ## Methods
 
 ### registerAppBarAction
 
-▸ **registerAppBarAction**(`actionName`: *string*, `actionFunc`: (...`args`: *any*[]) => *null* \| *Element*): *void*
+▸ **registerAppBarAction**(`actionName`, `actionFunc`): `void`
 
 Add a component into the app bar (at the top of the app).
 
-**`example`** 
+**`example`**
 
 ```JSX
 register.registerAppBarAction('monitor', () => <MonitorLink /> );
 ```
 
-#### Parameters:
+#### Parameters
 
-Name | Type | Description |
-:------ | :------ | :------ |
-`actionName` | *string* | a unique name for it   |
-`actionFunc` | (...`args`: *any*[]) => *null* \| *Element* | a function that returns your component    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `actionName` | `string` | a unique name for it |
+| `actionFunc` | (...`args`: `any`[]) => ``null`` \| `Element` | a function that returns your component |
 
-**Returns:** *void*
+#### Returns
 
-Defined in: plugin/registry.tsx:101
+`void`
+
+#### Defined in
+
+plugin/registry.tsx:101
 
 ___
 
 ### registerDetailsViewHeaderAction
 
-▸ **registerDetailsViewHeaderAction**(`actionName`: *string*, `actionFunc`: (...`args`: *any*[]) => *null* \| *Element*): *void*
+▸ **registerDetailsViewHeaderAction**(`actionName`, `actionFunc`): `void`
 
 Add a component into the details view header.
 
-**`example`** 
+**`example`**
 
 ```JSX
 register.registerDetailsViewHeaderAction('traces', (props) =>
@@ -55,28 +57,32 @@ register.registerDetailsViewHeaderAction('traces', (props) =>
 );
 ```
 
-#### Parameters:
+#### Parameters
 
-Name | Type | Description |
-:------ | :------ | :------ |
-`actionName` | *string* | a unique name for it   |
-`actionFunc` | (...`args`: *any*[]) => *null* \| *Element* | a function that returns your component                     with props to pass into it.    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `actionName` | `string` | a unique name for it |
+| `actionFunc` | (...`args`: `any`[]) => ``null`` \| `Element` | a function that returns your component                     with props to pass into it. |
 
-**Returns:** *void*
+#### Returns
 
-Defined in: plugin/registry.tsx:82
+`void`
+
+#### Defined in
+
+plugin/registry.tsx:82
 
 ___
 
 ### registerRoute
 
-▸ **registerRoute**(`routeSpec`: Route): *void*
+▸ **registerRoute**(`routeSpec`): `void`
 
 Add a Route for a component.
 
 **`see`** [Route examples](https://github.com/kinvolk/headlamp/blob/main/frontend/src/lib/router.tsx)
 
-**`example`** 
+**`example`**
 
 ```JSX
 // Add a route that will display the given component and select
@@ -88,41 +94,49 @@ register.registerRoute({
 });
 ```
 
-#### Parameters:
+#### Parameters
 
-Name | Type | Description |
-:------ | :------ | :------ |
-`routeSpec` | Route | details of URL, highlighted sidebar and component to use.    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `routeSpec` | `Route` | details of URL, highlighted sidebar and component to use. |
 
-**Returns:** *void*
+#### Returns
 
-Defined in: plugin/registry.tsx:63
+`void`
+
+#### Defined in
+
+plugin/registry.tsx:63
 
 ___
 
 ### registerSidebarItem
 
-▸ **registerSidebarItem**(`parentName`: *string*, `itemName`: *string*, `itemLabel`: *string*, `url`: *string*, `opts?`: { `useClusterURL`: *boolean* = true }): *void*
+▸ **registerSidebarItem**(`parentName`, `itemName`, `itemLabel`, `url`, `opts?`): `void`
 
 Add a SidebarItem.
 
-**`example`** 
+**`example`**
 
 ```javascript
 registerSidebarItem('cluster', 'traces', 'Traces', '/traces');
 ```
 
-#### Parameters:
+#### Parameters
 
-Name | Type | Default value | Description |
-:------ | :------ | :------ | :------ |
-`parentName` | *string* | - | the name of the parent SidebarItem.   |
-`itemName` | *string* | - | name of this SidebarItem.   |
-`itemLabel` | *string* | - | label to display.   |
-`url` | *string* | - | the URL to go to, when this item is followed.   |
-`opts` | *object* | - | ... todo    |
-`opts.useClusterURL` | *boolean* | true | - |
+| Name | Type | Default value | Description |
+| :------ | :------ | :------ | :------ |
+| `parentName` | `string` | `undefined` | the name of the parent SidebarItem. |
+| `itemName` | `string` | `undefined` | name of this SidebarItem. |
+| `itemLabel` | `string` | `undefined` | label to display. |
+| `url` | `string` | `undefined` | the URL to go to, when this item is followed. |
+| `opts` | `Object` | `undefined` | ... todo |
+| `opts.useClusterURL` | `boolean` | `true` | - |
 
-**Returns:** *void*
+#### Returns
 
-Defined in: plugin/registry.tsx:26
+`void`
+
+#### Defined in
+
+plugin/registry.tsx:26

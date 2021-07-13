@@ -2,7 +2,7 @@ import green from '@material-ui/core/colors/green';
 import grey from '@material-ui/core/colors/grey';
 import orange from '@material-ui/core/colors/orange';
 import red from '@material-ui/core/colors/red';
-import { createMuiTheme, Theme } from '@material-ui/core/styles';
+import { createTheme, Theme } from '@material-ui/core/styles';
 import { PaletteColor, PaletteColorOptions } from '@material-ui/core/styles/createPalette';
 import React from 'react';
 
@@ -90,9 +90,9 @@ const commonRules = {
   },
 };
 
-const lightTheme = createMuiTheme(commonRules);
+const lightTheme = createTheme(commonRules);
 
-const darkTheme = createMuiTheme({
+const darkTheme = createTheme({
   ...commonRules,
   palette: {
     ...commonRules.palette,

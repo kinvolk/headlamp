@@ -8,54 +8,74 @@ slug: "lib_k8s"
 
 ### ResourceClasses
 
-• `Const` **ResourceClasses**: *object*
+• `Const` **ResourceClasses**: `Object`
 
-#### Type declaration:
+#### Index signature
 
-Defined in: lib/k8s/index.ts:71
+▪ [className: `string`]: `KubeObject`
+
+#### Defined in
+
+lib/k8s/index.ts:71
 
 ## Functions
 
 ### getVersion
 
-▸ **getVersion**(): *Promise*<StringDict\>
+▸ **getVersion**(): `Promise`<`StringDict`\>
 
-**Returns:** *Promise*<StringDict\>
+#### Returns
 
-Defined in: lib/k8s/index.ts:143
+`Promise`<`StringDict`\>
+
+#### Defined in
+
+lib/k8s/index.ts:143
 
 ___
 
 ### useCluster
 
-▸ **useCluster**(): *null* \| *string*
+▸ **useCluster**(): ``null`` \| `string`
 
-**Returns:** *null* \| *string*
+#### Returns
 
-Defined in: lib/k8s/index.ts:126
+``null`` \| `string`
+
+#### Defined in
+
+lib/k8s/index.ts:126
 
 ___
 
 ### useClustersConf
 
-▸ **useClustersConf**(): ConfigState[*clusters*]
+▸ **useClustersConf**(): `ConfigState`[``"clusters"``]
 
-**Returns:** ConfigState[*clusters*]
+#### Returns
 
-Defined in: lib/k8s/index.ts:78
+`ConfigState`[``"clusters"``]
+
+#### Defined in
+
+lib/k8s/index.ts:78
 
 ___
 
 ### useConnectApi
 
-▸ **useConnectApi**(...`apiCalls`: () => CancellablePromise[]): *void*
+▸ **useConnectApi**(...`apiCalls`): `void`
 
-#### Parameters:
+#### Parameters
 
-Name | Type |
-:------ | :------ |
-`...apiCalls` | () => CancellablePromise[] |
+| Name | Type |
+| :------ | :------ |
+| `...apiCalls` | () => `CancellablePromise`[] |
 
-**Returns:** *void*
+#### Returns
 
-Defined in: lib/k8s/index.ts:149
+`void`
+
+#### Defined in
+
+lib/k8s/index.ts:149

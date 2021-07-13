@@ -14,7 +14,7 @@ exports[`Storyshots ActionsNotifier Some 1`] = `
     class="makeStyles-bottom makeStyles-left makeStyles-root"
   >
     <div
-      class="MuiCollapse-container MuiCollapse-entered"
+      class="MuiCollapse-root MuiCollapse-entered"
       style="min-height: 0px;"
     >
       <div

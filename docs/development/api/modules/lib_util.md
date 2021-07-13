@@ -4,201 +4,261 @@ linkTitle: "lib/util"
 slug: "lib_util"
 ---
 
-## Table of contents
+## Interfaces
 
-### Interfaces
-
-- [FilterState](../interfaces/lib_util.filterstate.md)
+- [FilterState](../interfaces/lib_util.FilterState.md)
 
 ## Variables
 
 ### CLUSTER\_ACTION\_GRACE\_PERIOD
 
-• `Const` **CLUSTER\_ACTION\_GRACE\_PERIOD**: *5000*= 5000
+• `Const` **CLUSTER\_ACTION\_GRACE\_PERIOD**: ``5000``
 
-Defined in: lib/util.ts:18
+#### Defined in
+
+lib/util.ts:17
 
 ## Functions
 
 ### filterResource
 
-▸ **filterResource**(`item`: KubeObjectInterface, `filter`: [*FilterState*](../interfaces/lib_util.filterstate.md)): *boolean*
+▸ **filterResource**(`item`, `filter`): `boolean`
 
-#### Parameters:
+#### Parameters
 
-Name | Type |
-:------ | :------ |
-`item` | KubeObjectInterface |
-`filter` | [*FilterState*](../interfaces/lib_util.filterstate.md) |
+| Name | Type |
+| :------ | :------ |
+| `item` | `KubeObjectInterface` |
+| `filter` | [`FilterState`](../interfaces/lib_util.FilterState.md) |
 
-**Returns:** *boolean*
+#### Returns
 
-Defined in: lib/util.ts:81
+`boolean`
+
+#### Defined in
+
+lib/util.ts:84
 
 ___
 
 ### getCluster
 
-▸ **getCluster**(): *string* \| *null*
+▸ **getCluster**(): `string` \| ``null``
 
-**Returns:** *string* \| *null*
+#### Returns
 
-Defined in: lib/util.ts:116
+`string` \| ``null``
+
+#### Defined in
+
+lib/util.ts:119
 
 ___
 
 ### getClusterPrefixedPath
 
-▸ **getClusterPrefixedPath**(`path?`: *string* \| *null*): *string*
+▸ **getClusterPrefixedPath**(`path?`): `string`
 
-#### Parameters:
+#### Parameters
 
-Name | Type |
-:------ | :------ |
-`path?` | *string* \| *null* |
+| Name | Type |
+| :------ | :------ |
+| `path?` | `string` \| ``null`` |
 
-**Returns:** *string*
+#### Returns
 
-Defined in: lib/util.ts:108
+`string`
+
+#### Defined in
+
+lib/util.ts:111
 
 ___
 
 ### getPercentStr
 
-▸ **getPercentStr**(`value`: *number*, `total`: *number*): *null* \| *string*
+▸ **getPercentStr**(`value`, `total`): ``null`` \| `string`
 
-#### Parameters:
+#### Parameters
 
-Name | Type |
-:------ | :------ |
-`value` | *number* |
-`total` | *number* |
+| Name | Type |
+| :------ | :------ |
+| `value` | `number` |
+| `total` | `number` |
 
-**Returns:** *null* \| *string*
+#### Returns
 
-Defined in: lib/util.ts:30
+``null`` \| `string`
+
+#### Defined in
+
+lib/util.ts:33
 
 ___
 
 ### getReadyReplicas
 
-▸ **getReadyReplicas**(`item`: Workload): *any*
+▸ **getReadyReplicas**(`item`): `any`
 
-#### Parameters:
+#### Parameters
 
-Name | Type |
-:------ | :------ |
-`item` | Workload |
+| Name | Type |
+| :------ | :------ |
+| `item` | `Workload` |
 
-**Returns:** *any*
+#### Returns
 
-Defined in: lib/util.ts:39
+`any`
+
+#### Defined in
+
+lib/util.ts:42
 
 ___
 
 ### getResourceMetrics
 
-▸ **getResourceMetrics**(`item`: Node, `metrics`: KubeMetrics[], `resourceType`: *cpu* \| *memory*): *any*[]
+▸ **getResourceMetrics**(`item`, `metrics`, `resourceType`): `any`[]
 
-#### Parameters:
+#### Parameters
 
-Name | Type |
-:------ | :------ |
-`item` | Node |
-`metrics` | KubeMetrics[] |
-`resourceType` | *cpu* \| *memory* |
+| Name | Type |
+| :------ | :------ |
+| `item` | `Node` |
+| `metrics` | `KubeMetrics`[] |
+| `resourceType` | ``"cpu"`` \| ``"memory"`` |
 
-**Returns:** *any*[]
+#### Returns
 
-Defined in: lib/util.ts:57
+`any`[]
+
+#### Defined in
+
+lib/util.ts:60
 
 ___
 
 ### getResourceStr
 
-▸ **getResourceStr**(`value`: *number*, `resourceType`: *cpu* \| *memory*): *string*
+▸ **getResourceStr**(`value`, `resourceType`): `string`
 
-#### Parameters:
+#### Parameters
 
-Name | Type |
-:------ | :------ |
-`value` | *number* |
-`resourceType` | *cpu* \| *memory* |
+| Name | Type |
+| :------ | :------ |
+| `value` | `number` |
+| `resourceType` | ``"cpu"`` \| ``"memory"`` |
 
-**Returns:** *string*
+#### Returns
 
-Defined in: lib/util.ts:47
+`string`
+
+#### Defined in
+
+lib/util.ts:50
 
 ___
 
 ### getTotalReplicas
 
-▸ **getTotalReplicas**(`item`: Workload): *any*
+▸ **getTotalReplicas**(`item`): `any`
 
-#### Parameters:
+#### Parameters
 
-Name | Type |
-:------ | :------ |
-`item` | Workload |
+| Name | Type |
+| :------ | :------ |
+| `item` | `Workload` |
 
-**Returns:** *any*
+#### Returns
 
-Defined in: lib/util.ts:43
+`any`
+
+#### Defined in
+
+lib/util.ts:46
 
 ___
 
 ### localeDate
 
-▸ **localeDate**(`date`: DateParam): *string*
+▸ **localeDate**(`date`): `string`
 
-#### Parameters:
+#### Parameters
 
-Name | Type |
-:------ | :------ |
-`date` | DateParam |
+| Name | Type |
+| :------ | :------ |
+| `date` | `DateParam` |
 
-**Returns:** *string*
+#### Returns
 
-Defined in: lib/util.ts:26
+`string`
+
+#### Defined in
+
+lib/util.ts:25
 
 ___
 
 ### timeAgo
 
-▸ **timeAgo**(`date`: DateParam): *string*
+▸ **timeAgo**(`date`): `string`
 
-#### Parameters:
+#### Parameters
 
-Name | Type |
-:------ | :------ |
-`date` | DateParam |
+| Name | Type |
+| :------ | :------ |
+| `date` | `DateParam` |
 
-**Returns:** *string*
+#### Returns
 
-Defined in: lib/util.ts:22
+`string`
+
+#### Defined in
+
+lib/util.ts:21
 
 ___
 
 ### useErrorState
 
-▸ **useErrorState**(`dependentSetter?`: (...`args`: *any*) => *void*): *any*[]
+▸ **useErrorState**(`dependentSetter?`): `any`[]
 
-#### Parameters:
+#### Parameters
 
-Name | Type |
-:------ | :------ |
-`dependentSetter?` | (...`args`: *any*) => *void* |
+| Name | Type |
+| :------ | :------ |
+| `dependentSetter?` | (...`args`: `any`) => `void` |
 
-**Returns:** *any*[]
+#### Returns
 
-Defined in: lib/util.ts:128
+`any`[]
+
+#### Defined in
+
+lib/util.ts:131
 
 ___
 
 ### useFilterFunc
 
-▸ **useFilterFunc**(): *function*
+▸ **useFilterFunc**(): (`item`: `KubeObjectInterface`) => `boolean`
 
-**Returns:** (`item`: KubeObjectInterface) => *boolean*
+#### Returns
 
-Defined in: lib/util.ts:103
+`fn`
+
+▸ (`item`): `boolean`
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `item` | `KubeObjectInterface` |
+
+##### Returns
+
+`boolean`
+
+#### Defined in
+
+lib/util.ts:106

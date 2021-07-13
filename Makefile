@@ -41,8 +41,15 @@ backend:
 frontend-install:
 	cd frontend && npm install
 
+frontend-install-ci:
+	cd frontend && npm ci
+
 .PHONY: frontend
 frontend: frontend-install
+	cd frontend && npm run build
+
+.PHONY: frontend-build
+frontend-build:
 	cd frontend && npm run build
 
 run-backend:
@@ -52,10 +59,14 @@ run-frontend:
 	cd frontend && npm start
 
 frontend-lint:
-	cd frontend && npm run lint -- --max-warnings 0
+	cd frontend && npm run lint -- --max-warnings 0 && npm run format-check
 
 frontend-fixlint:
-	cd frontend && npm run lint -- --fix
+	cd frontend && npm run lint -- --fix && npm run format
+
+.PHONY: frontend-tsc
+frontend-tsc:
+	cd frontend && npm run tsc
 
 frontend-test:
 	cd frontend && npm run test -- --coverage

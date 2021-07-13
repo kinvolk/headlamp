@@ -111,7 +111,7 @@ exports[`Storyshots Sidebar/SidebarItem Sublist 1`] = `
         class="MuiListItem-root makeStyles-fullWidthList MuiListItem-gutters"
       >
         <div
-          class="MuiCollapse-container makeStyles-fullWidth MuiCollapse-hidden"
+          class="MuiCollapse-root makeStyles-fullWidth MuiCollapse-hidden"
           style="min-height: 0px;"
         >
           <div
@@ -210,7 +210,7 @@ exports[`Storyshots Sidebar/SidebarItem Sublist Expanded 1`] = `
         class="MuiListItem-root makeStyles-fullWidthList MuiListItem-gutters"
       >
         <div
-          class="MuiCollapse-container makeStyles-fullWidth MuiCollapse-entered"
+          class="MuiCollapse-root makeStyles-fullWidth MuiCollapse-entered"
           style="min-height: 0px;"
         >
           <div

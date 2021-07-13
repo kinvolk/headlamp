@@ -17,7 +17,7 @@ exports[`Storyshots Label/HeaderLabel Header Label 1`] = `
       </p>
     </div>
     <div
-      class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
+      class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-align-items-xs-center MuiGrid-justify-content-xs-center"
     >
       <div
         class="MuiGrid-root MuiGrid-item"
@@ -70,7 +70,7 @@ exports[`Storyshots Label/HeaderLabel Header Label Tool Tip 1`] = `
       </div>
     </div>
     <div
-      class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
+      class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-align-items-xs-center MuiGrid-justify-content-xs-center"
     >
       <div
         class="MuiGrid-root MuiGrid-item"

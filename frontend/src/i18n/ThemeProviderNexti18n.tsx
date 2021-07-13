@@ -1,5 +1,5 @@
 import { deDE, enUS, esES, hiIN, ptPT } from '@material-ui/core/locale';
-import { createMuiTheme, Theme, ThemeProvider } from '@material-ui/core/styles';
+import { createTheme, Theme, ThemeProvider } from '@material-ui/core/styles';
 import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
@@ -31,7 +31,7 @@ const ThemeProviderNexti18n: React.FunctionComponent<{ theme: Theme }> = props =
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const theme = createMuiTheme(props.theme, getLocale(lang));
+  const theme = createTheme(props.theme, getLocale(lang));
 
   return <ThemeProvider theme={theme}>{props.children}</ThemeProvider>;
 };

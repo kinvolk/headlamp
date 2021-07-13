@@ -5,7 +5,7 @@ exports[`Storyshots SectionHeader Actions 1`] = `
   id="root"
 >
   <div
-    class="MuiGrid-root makeStyles-sectionHeader makeStyles-sectionHeader MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+    class="MuiGrid-root makeStyles-sectionHeader makeStyles-sectionHeader MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-align-items-xs-center MuiGrid-justify-content-xs-space-between"
   >
     <div
       class="MuiGrid-root MuiGrid-item"
@@ -20,7 +20,7 @@ exports[`Storyshots SectionHeader Actions 1`] = `
       class="MuiGrid-root MuiGrid-item"
     >
       <div
-        class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-align-items-xs-center MuiGrid-justify-xs-flex-end"
+        class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-align-items-xs-center MuiGrid-justify-content-xs-flex-end"
       >
         <div
           class="MuiGrid-root MuiGrid-item"
@@ -47,7 +47,7 @@ exports[`Storyshots SectionHeader Main 1`] = `
   id="root"
 >
   <div
-    class="MuiGrid-root makeStyles-sectionHeader makeStyles-sectionHeader MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+    class="MuiGrid-root makeStyles-sectionHeader makeStyles-sectionHeader MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-align-items-xs-center MuiGrid-justify-content-xs-space-between"
   >
     <div
       class="MuiGrid-root MuiGrid-item"
@@ -67,7 +67,7 @@ exports[`Storyshots SectionHeader Normal 1`] = `
   id="root"
 >
   <div
-    class="MuiGrid-root makeStyles-sectionHeader makeStyles-sectionHeader MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+    class="MuiGrid-root makeStyles-sectionHeader makeStyles-sectionHeader MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-align-items-xs-center MuiGrid-justify-content-xs-space-between"
   >
     <div
       class="MuiGrid-root MuiGrid-item"
@@ -87,7 +87,7 @@ exports[`Storyshots SectionHeader Normal No Padding 1`] = `
   id="root"
 >
   <div
-    class="MuiGrid-root makeStyles-sectionHeader makeStyles-sectionHeader MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+    class="MuiGrid-root makeStyles-sectionHeader makeStyles-sectionHeader MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-align-items-xs-center MuiGrid-justify-content-xs-space-between"
   >
     <div
       class="MuiGrid-root MuiGrid-item"
@@ -107,7 +107,7 @@ exports[`Storyshots SectionHeader Subsection 1`] = `
   id="root"
 >
   <div
-    class="MuiGrid-root makeStyles-sectionHeader makeStyles-sectionHeader MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+    class="MuiGrid-root makeStyles-sectionHeader makeStyles-sectionHeader MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-align-items-xs-center MuiGrid-justify-content-xs-space-between"
   >
     <div
       class="MuiGrid-root MuiGrid-item"

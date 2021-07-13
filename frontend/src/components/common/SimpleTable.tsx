@@ -126,7 +126,9 @@ export default function SimpleTable(props: SimpleTableProps) {
     setPage(newPage);
   }
 
-  function handleChangeRowsPerPage(event: any) {
+  function handleChangeRowsPerPage(
+    event: React.ChangeEvent<HTMLTextAreaElement> | React.ChangeEvent<HTMLInputElement>
+  ) {
     setRowsPerPage(+event.target.value);
     setPage(0);
   }
@@ -316,8 +318,8 @@ export default function SimpleTable(props: SimpleTableProps) {
           nextIconButtonProps={{
             'aria-label': 'next page',
           }}
-          onChangePage={handleChangePage}
-          onChangeRowsPerPage={handleChangeRowsPerPage}
+          onPageChange={handleChangePage}
+          onRowsPerPageChange={handleChangeRowsPerPage}
         />
       )}
     </React.Fragment>

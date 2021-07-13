@@ -17,11 +17,11 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-20.04
 
     strategy:
       matrix:
-        node-version: [10.x, 12.x, 14.x]
+        node-version: [12.x, 14.x, 16.x]
 
     steps:
     - uses: actions/checkout@v2.3.3
@@ -31,9 +31,12 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
+    - name: Install dependencies
+      run: |
+        make frontend-install-ci
+
     - name: Run linter
       run: |
-        make frontend-install
         make frontend-lint
 
     - name: Run tests
@@ -42,5 +45,5 @@ jobs:
 
     - name: Build Frontend
       run: |
-        make frontend
+        make frontend-build
 

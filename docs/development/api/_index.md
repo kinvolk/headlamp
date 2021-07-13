@@ -4,9 +4,7 @@ linkTitle: "API"
 slug: "_index"
 ---
 
-## Table of contents
-
-### Modules
+## Modules
 
 - [lib/k8s](modules/lib_k8s.md)
 - [lib/util](modules/lib_util.md)

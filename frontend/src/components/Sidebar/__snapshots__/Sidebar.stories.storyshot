@@ -37,7 +37,7 @@ exports[`Storyshots Sidebar/Sidebar Closed 1`] = `
         </button>
       </div>
       <div
-        class="MuiGrid-root makeStyles-sidebarGrid MuiGrid-container MuiGrid-direction-xs-column MuiGrid-wrap-xs-nowrap MuiGrid-justify-xs-space-between"
+        class="MuiGrid-root makeStyles-sidebarGrid MuiGrid-container MuiGrid-direction-xs-column MuiGrid-wrap-xs-nowrap MuiGrid-justify-content-xs-space-between"
       >
         <div
           class="MuiGrid-root MuiGrid-item"
@@ -88,7 +88,7 @@ exports[`Storyshots Sidebar/Sidebar Closed 1`] = `
               class="MuiListItem-root makeStyles-fullWidthList MuiListItem-gutters"
             >
               <div
-                class="MuiCollapse-container makeStyles-fullWidth MuiCollapse-hidden"
+                class="MuiCollapse-root makeStyles-fullWidth MuiCollapse-hidden"
                 style="min-height: 0px;"
               >
                 <div
@@ -236,7 +236,7 @@ exports[`Storyshots Sidebar/Sidebar Closed 1`] = `
               class="MuiListItem-root makeStyles-fullWidthList MuiListItem-gutters"
             >
               <div
-                class="MuiCollapse-container makeStyles-fullWidth MuiCollapse-hidden"
+                class="MuiCollapse-root makeStyles-fullWidth MuiCollapse-hidden"
                 style="min-height: 0px;"
               >
                 <div
@@ -450,7 +450,7 @@ exports[`Storyshots Sidebar/Sidebar Closed 1`] = `
               class="MuiListItem-root makeStyles-fullWidthList MuiListItem-gutters"
             >
               <div
-                class="MuiCollapse-container makeStyles-fullWidth MuiCollapse-hidden"
+                class="MuiCollapse-root makeStyles-fullWidth MuiCollapse-hidden"
                 style="min-height: 0px;"
               >
                 <div
@@ -576,7 +576,7 @@ exports[`Storyshots Sidebar/Sidebar Closed 1`] = `
               class="MuiListItem-root makeStyles-fullWidthList MuiListItem-gutters"
             >
               <div
-                class="MuiCollapse-container makeStyles-fullWidth MuiCollapse-hidden"
+                class="MuiCollapse-root makeStyles-fullWidth MuiCollapse-hidden"
                 style="min-height: 0px;"
               >
                 <div
@@ -680,7 +680,7 @@ exports[`Storyshots Sidebar/Sidebar Closed 1`] = `
               class="MuiListItem-root makeStyles-fullWidthList MuiListItem-gutters"
             >
               <div
-                class="MuiCollapse-container makeStyles-fullWidth MuiCollapse-hidden"
+                class="MuiCollapse-root makeStyles-fullWidth MuiCollapse-hidden"
                 style="min-height: 0px;"
               >
                 <div
@@ -837,7 +837,7 @@ exports[`Storyshots Sidebar/Sidebar Open 1`] = `
         </button>
       </div>
       <div
-        class="MuiGrid-root makeStyles-sidebarGrid MuiGrid-container MuiGrid-direction-xs-column MuiGrid-wrap-xs-nowrap MuiGrid-justify-xs-space-between"
+        class="MuiGrid-root makeStyles-sidebarGrid MuiGrid-container MuiGrid-direction-xs-column MuiGrid-wrap-xs-nowrap MuiGrid-justify-content-xs-space-between"
       >
         <div
           class="MuiGrid-root MuiGrid-item"
@@ -889,7 +889,7 @@ exports[`Storyshots Sidebar/Sidebar Open 1`] = `
               class="MuiListItem-root makeStyles-fullWidthList MuiListItem-gutters"
             >
               <div
-                class="MuiCollapse-container makeStyles-fullWidth MuiCollapse-entered"
+                class="MuiCollapse-root makeStyles-fullWidth MuiCollapse-entered"
                 style="min-height: 0px;"
               >
                 <div
@@ -1038,7 +1038,7 @@ exports[`Storyshots Sidebar/Sidebar Open 1`] = `
               class="MuiListItem-root makeStyles-fullWidthList MuiListItem-gutters"
             >
               <div
-                class="MuiCollapse-container makeStyles-fullWidth MuiCollapse-hidden"
+                class="MuiCollapse-root makeStyles-fullWidth MuiCollapse-hidden"
                 style="min-height: 0px;"
               >
                 <div
@@ -1253,7 +1253,7 @@ exports[`Storyshots Sidebar/Sidebar Open 1`] = `
               class="MuiListItem-root makeStyles-fullWidthList MuiListItem-gutters"
             >
               <div
-                class="MuiCollapse-container makeStyles-fullWidth MuiCollapse-hidden"
+                class="MuiCollapse-root makeStyles-fullWidth MuiCollapse-hidden"
                 style="min-height: 0px;"
               >
                 <div
@@ -1380,7 +1380,7 @@ exports[`Storyshots Sidebar/Sidebar Open 1`] = `
               class="MuiListItem-root makeStyles-fullWidthList MuiListItem-gutters"
             >
               <div
-                class="MuiCollapse-container makeStyles-fullWidth MuiCollapse-hidden"
+                class="MuiCollapse-root makeStyles-fullWidth MuiCollapse-hidden"
                 style="min-height: 0px;"
               >
                 <div
@@ -1485,7 +1485,7 @@ exports[`Storyshots Sidebar/Sidebar Open 1`] = `
               class="MuiListItem-root makeStyles-fullWidthList MuiListItem-gutters"
             >
               <div
-                class="MuiCollapse-container makeStyles-fullWidth MuiCollapse-hidden"
+                class="MuiCollapse-root makeStyles-fullWidth MuiCollapse-hidden"
                 style="min-height: 0px;"
               >
                 <div

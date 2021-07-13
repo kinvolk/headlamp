@@ -4,20 +4,22 @@ linkTitle: "plugin"
 slug: "plugin"
 ---
 
-## Table of contents
+## Classes
 
-### Classes
-
-- [Plugin](../classes/plugin.plugin-1.md)
+- [Plugin](../classes/plugin.Plugin.md)
 
 ## Functions
 
 ### initializePlugins
 
-▸ **initializePlugins**(): *Promise*<unknown\>
+▸ **initializePlugins**(): `Promise`<`unknown`\>
 
 Load external, then local plugins. Then initialize() them in order with a Registry.
 
-**Returns:** *Promise*<unknown\>
+#### Returns
 
-Defined in: plugin/index.tsx:211
+`Promise`<`unknown`\>
+
+#### Defined in
+
+plugin/index.tsx:211

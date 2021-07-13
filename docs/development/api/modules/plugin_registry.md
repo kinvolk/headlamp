@@ -4,8 +4,6 @@ linkTitle: "plugin/registry"
 slug: "plugin_registry"
 ---
 
-## Table of contents
-
-### Classes
+## Classes
 
 - [default](../classes/plugin_registry.default.md)

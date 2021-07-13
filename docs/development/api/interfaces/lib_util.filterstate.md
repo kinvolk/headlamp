@@ -1,7 +1,7 @@
 ---
 title: "Interface: FilterState"
 linkTitle: "FilterState"
-slug: "lib_util.filterstate"
+slug: "lib_util.FilterState"
 ---
 
 [lib/util](../modules/lib_util.md).FilterState
@@ -10,14 +10,18 @@ slug: "lib_util.filterstate"
 
 ### namespaces
 
-• **namespaces**: *Set*<string\>
+• **namespaces**: `Set`<`string`\>
 
-Defined in: lib/util.ts:77
+#### Defined in
+
+lib/util.ts:80
 
 ___
 
 ### search
 
-• **search**: *string*
+• **search**: `string`
 
-Defined in: lib/util.ts:78
+#### Defined in
+
+lib/util.ts:81

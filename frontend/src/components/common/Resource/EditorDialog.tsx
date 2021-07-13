@@ -125,14 +125,12 @@ export default function EditorDialog(props: EditorDialogProps) {
   }
 
   function getObjectFromCode(code: string): KubeObjectInterface | null {
-    let codeObj = {};
     try {
-      codeObj = yaml.load(code);
+      const codeObj = yaml.load(code);
+      return codeObj as KubeObjectInterface;
     } catch (e) {
       return null;
     }
-
-    return codeObj as KubeObjectInterface;
   }
 
   function handleTabChange(tabIndex: number) {

@@ -1,7 +1,7 @@
 ---
 title: "Class: Plugin"
 linkTitle: "Plugin"
-slug: "plugin.plugin-1"
+slug: "plugin.Plugin"
 ---
 
 [plugin](../modules/plugin.md).Plugin
@@ -14,26 +14,28 @@ They will have their initialize(register) method called at plugin initialization
 
 ### constructor
 
-\+ **new Plugin**(): [*Plugin*](plugin.plugin-1.md)
-
-**Returns:** [*Plugin*](plugin.plugin-1.md)
+• **new Plugin**()
 
 ## Methods
 
 ### initialize
 
-▸ `Abstract`**initialize**(`register`: [*default*](plugin_registry.default.md)): *boolean*
+▸ `Abstract` **initialize**(`register`): `boolean`
 
 initialize is called for each plugin with a Registry which gives the plugin methods for doing things.
 
 **`see`** Registry
 
-#### Parameters:
+#### Parameters
 
-Name | Type |
-:------ | :------ |
-`register` | [*default*](plugin_registry.default.md) |
+| Name | Type |
+| :------ | :------ |
+| `register` | [`default`](plugin_registry.default.md) |
 
-**Returns:** *boolean*
+#### Returns
 
-Defined in: plugin/index.tsx:86
+`boolean`
+
+#### Defined in
+
+plugin/index.tsx:86
