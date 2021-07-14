@@ -1,0 +1,116 @@
+# Default values for headlamp.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+# -- Number of desired pods
+replicaCount: 1
+
+image:
+  # -- Container image registry
+  registry: ghcr.io
+  # -- Container image name
+  repository: kinvolk/headlamp
+  # -- Image pull policy. One of Always, Never, IfNotPresent
+  pullPolicy: IfNotPresent
+  # -- Container image tag, If ""	uses appVersion in Chart.yaml
+  tag: ""
+
+# -- An optional list of references to secrets in the same namespace to use for pulling any of the images used
+imagePullSecrets: []
+# -- Overrides the name of the chart
+nameOverride: ""
+# -- Overrides the full name of the chart
+fullnameOverride: ""
+
+config:
+  # -- base url path at which headlamp should run
+  baseURL:
+  oidc:
+    # -- OIDC client ID
+    clientID:
+    # -- OIDC client secret
+    clientSecret:
+    # -- OIDC issuer URL
+    issuerURL:
+    # -- OIDC scopes to be used
+    scopes:
+
+serviceAccount:
+  # -- Specifies whether a service account should be created
+  create: true
+  # -- Annotations to add to the service account
+  annotations: {}
+  # -- The name of the service account to use.(If not set and create is true, a name is generated using the fullname template)
+  name: ""
+
+clusterRoleBinding:
+  # -- Specified whether a cluster role binding should be created
+  create: true
+  # -- Annotations to add to the cluster role binding
+  annotations: {}
+
+# -- Annotations to add to the pod
+podAnnotations: {}
+
+# -- Headlamp pods' Security Context
+podSecurityContext:
+  {}
+  # fsGroup: 2000
+
+# -- Headlamp containers Security Context
+securityContext:
+  {}
+  # capabilities:
+  #   drop:
+  #   - ALL
+  # readOnlyRootFilesystem: true
+  # runAsNonRoot: true
+  # runAsUser: 1000
+
+service:
+  # -- Kubernetes Service type
+  type: ClusterIP
+  # -- Kubernetes Service port
+  port: 80
+
+ingress:
+  # -- Enable ingress controller resource
+  enabled: false
+  # -- Annotations for Ingress resource
+  annotations:
+    {}
+    # kubernetes.io/ingress.class: nginx
+    # kubernetes.io/tls-acme: "true"
+  # -- Hostname(s) for the Ingress resource
+  hosts:
+    []
+    # - host: chart-example.local
+    #   paths: []
+  # -- Ingress TLS configuration
+  tls: []
+  #  - secretName: chart-example-tls
+  #    hosts:
+  #      - chart-example.local
+
+# -- CPU/Memory resource requests/limits
+resources:
+  {}
+  # We usually recommend not to specify default resources and to leave this as a conscious
+  # choice for the user. This also increases chances charts run on environments with little
+  # resources, such as Minikube. If you do want to specify resources, uncomment the following
+  # lines, adjust them as necessary, and remove the curly braces after 'resources:'.
+  # limits:
+  #   cpu: 100m
+  #   memory: 128Mi
+  # requests:
+  #   cpu: 100m
+  #   memory: 128Mi
+
+# -- Node labels for pod assignment
+nodeSelector: {}
+
+# -- Toleration labels for pod assignment
+tolerations: []
+
+# -- Affinity settings for pod assignment
+affinity: {}

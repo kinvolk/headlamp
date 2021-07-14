@@ -1,0 +1,47 @@
+name: Lint and Test Charts
+
+on:
+  pull_request:
+    paths:
+      - charts/**
+      - '!charts/**/README.md'
+
+jobs:
+  lint-test:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Set up Helm
+        uses: azure/setup-helm@v1
+        with:
+          version: v3.4.0
+
+      - uses: actions/setup-python@v2
+        with:
+          python-version: 3.7
+
+      - name: Set up chart-testing
+        uses: helm/chart-testing-action@v2.0.1
+
+      - name: Run chart-testing (list-changed)
+        id: list-changed
+        run: |
+          changed=$(ct list-changed --config .github/ct.yaml)
+          if [[ -n "$changed" ]]; then
+            echo "::set-output name=changed::true"
+          fi
+
+      - name: Run chart-testing (lint)
+        run: ct lint --config .github/ct.yaml
+
+      - name: Create kind cluster
+        uses: helm/kind-action@v1.2.0
+        if: steps.list-changed.outputs.changed == 'true'
+
+      - name: Run chart-testing (install)
+        run: ct install --config .github/ct.yaml
+
